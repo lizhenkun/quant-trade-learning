@@ -31,5 +31,4 @@ Lizhenkun
 1292746975@qq.com
 
 
-[changelog]: http://icode.baidu.com/repos/baidu/goodcoder/lizhenkun01/blob/master:CHANGELOG.md
-http://github.com/lizhenkun01/quant-trade-learning/blob/master:CHANGELOG.md
+[changelog]: https://github.com/lizhenkun/quant-trade-learning/blob/master/CHANGELOG.md
