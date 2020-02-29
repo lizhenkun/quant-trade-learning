@@ -8,8 +8,6 @@ Created on 2020-02-23
 @author: lizhenkun
 @contact: 1292746975@qq.com
 """
-
-
 import tushare as ts
 
 MY_TOKEN = '190040a13eb5b092ca76fa003f58d693c9121e0fc621f6d2ad221468'

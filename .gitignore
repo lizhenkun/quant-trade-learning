@@ -2,4 +2,7 @@
 *.pyc
 *.un~
 *.sw*
+*.self
 .ipynb_checkpoints
+conf/my_accounts.py
+
