@@ -1,0 +1,10 @@
+#--index-url http://pip.baidu.com/root/baidu/+simple/
+#--trusted-host pip.baidu.com
+#--index-url https://pypi.tuna.tsinghua.edu.cn/simple
+#--trusted-host pypi.tuna.tsinghua.edu.cn
+#-e .
+scikit-learn>=0.22.1
+pandas>=1.0.0
+tushare>=1.2
+pytdx>=1.72
+#requests-html==0.10.0
