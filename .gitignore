@@ -3,6 +3,7 @@
 *.un~
 *.sw*
 *.self
+*.code-workspace
 .ipynb_checkpoints
-conf/my_accounts.py
-
+.vscode
+src/conf/accounts.py

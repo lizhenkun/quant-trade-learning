@@ -3,8 +3,12 @@
 #--index-url https://pypi.tuna.tsinghua.edu.cn/simple
 #--trusted-host pypi.tuna.tsinghua.edu.cn
 #-e .
-scikit-learn>=0.22.1
-pandas>=1.0.0
-tushare>=1.2
-pytdx>=1.72
-#requests-html==0.10.0
+#PATH=C:\Applications\Anaconda3;C:\Applications\Anaconda3\Library\mingw-w64\bin;C:\Applications\Anaconda3\Library\usr\bin;C:\Applications\Anaconda3\Library\bin;C:\Applications\Anaconda3\Scripts;C:\Applications\Anaconda3\bin;C:\Applications\Anaconda3\condabin;C:\Applications\Anaconda3;C:\Applications\Anaconda3\Library\mingw-w64\bin;C:\Applications\Anaconda3\Library\usr\bin;C:\Applications\Anaconda3\Library\bin;C:\Applications\Anaconda3\Scripts;
+scikit-learn
+pandas
+tushare
+pytdx
+requests-html
+pyecharts
+# windows only
+gm

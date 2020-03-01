@@ -1,5 +1,4 @@
-#!/usr/bin/env python
-# -*- coding: UTF-8 -*-
+# coding=utf-8
 """
 股票日行情
 tushare learning: https://tushare.pro/document/1?doc_id=131
@@ -40,11 +39,12 @@ def get_stock_daily(ts_code: str, start_date: str = None,
 
 
 if __name__ == '__main__':
-    ts_code='002713.SZ'
+    stock_code='002713.SZ'
     start_date = '20140101'
     end_date = datetime.now().strftime('%Y%m%d')
-    df = get_stock_daily(ts_code, start_date, end_date)
+    df = get_stock_daily(stock_code, start_date, end_date)
     csv_file = os.path.join(ct.CHINA_STOCK_DATA_DIR, '{0}.csv'.format(ts_code))
+    csv_file
     print('save to file: %s' % csv_file)
     df.to_csv(csv_file, index=False)
     print(df)

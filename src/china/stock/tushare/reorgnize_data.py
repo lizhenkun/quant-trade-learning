@@ -1,5 +1,4 @@
-#!/usr/bin/env python
-# -*- coding: UTF-8 -*-
+# coding=utf-8
 """
 股票日行情
 tushare learning: https://tushare.pro/document/1?doc_id=131
