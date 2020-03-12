@@ -7,3 +7,5 @@
 .ipynb_checkpoints
 .vscode
 src/conf/accounts.py
+coin_quant_class
+*.mp4

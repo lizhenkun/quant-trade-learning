@@ -20,6 +20,7 @@ stock_df = pd.read_csv(csv_file)
 ma_list = [3, 5, 20]
 
 for ma in ma_list:
+    # https://blog.csdn.net/The_Time_Runner/article/details/84101525
     stock_df['MA{0}'.format(ma)] = round(stock_df['close'].rolling(ma).mean(), 3)
 
 # ===找出做多信号: 股价上穿MA20

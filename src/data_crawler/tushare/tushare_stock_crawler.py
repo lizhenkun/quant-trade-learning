@@ -16,7 +16,7 @@ import src.lib.constants as ct
 import src.conf.accounts as accounts
 
 
-def get_stock_daily(ts_code: str, start_date: str = None, 
+def request_stock_daily(ts_code: str, start_date: str = None, 
     end_date: str = None) -> pd.DataFrame:
     """
     @see https://www.waditu.com/document/2?doc_id=27
@@ -39,12 +39,15 @@ def get_stock_daily(ts_code: str, start_date: str = None,
 
 
 if __name__ == '__main__':
-    stock_code='002713.SZ'
-    start_date = '20140101'
+    stock_code='000723.SZ'
+    start_date = '19970515'
     end_date = datetime.now().strftime('%Y%m%d')
-    df = get_stock_daily(stock_code, start_date, end_date)
-    csv_file = os.path.join(ct.CHINA_STOCK_DATA_DIR, '{0}.csv'.format(ts_code))
-    csv_file
-    print('save to file: %s' % csv_file)
+    df = request_stock_daily(stock_code, start_date, end_date)
+    df['datetime'] = pd.to_datetime(df['trade_date'])
+    df = df[['datetime', 'open', 'high', 'low', 'close', 'vol', 'amount']]\
+        .sort_values('datetime').reset_index(drop=True)
+    # df
+    csv_file = os.path.join(ct.CHINA_STOCK_DATA_DIR, '{0}_qfq.csv'.format(stock_code))
     df.to_csv(csv_file, index=False)
+    print('save to file: %s' % csv_file)
     print(df)
