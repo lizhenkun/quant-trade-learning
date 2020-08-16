@@ -9,3 +9,4 @@
 src/conf/accounts.py
 coin_quant_class
 *.mp4
+.DS_Store
